@@ -1,0 +1,184 @@
+2024/03/20 08:53:57 [error] 7236#18596: *1 directory index of "C:/Office_Work_Space/PHP/Servers/nginx-1.24.0/www/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2024/03/20 08:55:24 [notice] 15112#15216: signal process started
+2024/03/20 08:58:12 [notice] 16756#17104: signal process started
+2024/03/20 08:58:21 [error] 5360#14748: *15 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('views/exception...', Array)
+#6 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(70): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->renderException(Object(Symfony\Component\ErrorHandler\Exception\FlattenException))
+#7 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendo
+2024/03/20 08:58:21 [error] 5360#14748: *15 FastCGI sent in stderr: "php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#17 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339
+PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlE
+2024/03/20 08:58:21 [error] 5360#14748: *15 FastCGI sent in stderr: "uminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#14 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#18 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9999", host: "localhost"
+2024/03/20 09:02:50 [notice] 23936#7992: signal process started
+2024/03/20 09:13:16 [error] 19580#22696: *36 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('views/exception...', Array)
+#6 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(70): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->renderException(Object(Symfony\Component\ErrorHandler\Exception\FlattenException))
+#7 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vend
+2024/03/20 09:13:16 [error] 19580#22696: *36 FastCGI sent in stderr: "php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#17 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339
+PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\Html
+2024/03/20 09:13:16 [error] 19580#22696: *36 FastCGI sent in stderr: "uminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#14 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#18 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register HTTP/1.1", upstream: "fastcgi://127.0.0.1:9999", host: "localhost"
+2024/03/20 09:14:17 [error] 19580#22696: *40 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('views/exception...', Array)
+#6 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(70): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->renderException(Object(Symfony\Component\ErrorHandler\Exception\FlattenException))
+#7 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vend
+2024/03/20 09:14:17 [error] 19580#22696: *40 FastCGI sent in stderr: "php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#17 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339
+PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\Html
+2024/03/20 09:14:17 [error] 19580#22696: *40 FastCGI sent in stderr: "uminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#14 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#18 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register HTTP/1.1", upstream: "fastcgi://127.0.0.1:9999", host: "localhost"
+2024/03/20 09:15:08 [error] 19580#22696: *48 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('views/exception...', Array)
+#6 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(70): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->renderException(Object(Symfony\Component\ErrorHandler\Exception\FlattenException))
+#7 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vend
+2024/03/20 09:15:08 [error] 19580#22696: *48 FastCGI sent in stderr: "php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#17 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339
+PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\Html
+2024/03/20 09:15:08 [error] 19580#22696: *48 FastCGI sent in stderr: "uminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#14 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#18 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9999", host: "localhost"
+2024/03/20 09:17:51 [notice] 13984#3384: signal process started
+2024/03/20 09:18:00 [error] 1604#11376: *53 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('views/exception...', Array)
+#6 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(70): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->renderException(Object(Symfony\Component\ErrorHandler\Exception\FlattenException))
+#7 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendo
+2024/03/20 09:18:00 [error] 1604#11376: *53 FastCGI sent in stderr: "php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#17 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339
+PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlE
+2024/03/20 09:18:00 [error] 1604#11376: *53 FastCGI sent in stderr: "uminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#14 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#18 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9999", host: "localhost"
+2024/03/20 09:18:15 [notice] 14072#21644: signal process started
+2024/03/20 09:18:30 [error] 13892#20072: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('views/exception...', Array)
+#6 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(70): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->renderException(Object(Symfony\Component\ErrorHandler\Exception\FlattenException))
+#7 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendo
+2024/03/20 09:18:30 [error] 13892#20072: *1 FastCGI sent in stderr: "php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#17 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339
+PHP Fatal error:  Uncaught ErrorException: include(assets/js/exception.js): Failed to open stream: No such file or directory in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php:339
+Stack trace:
+#0 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#1 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(assets/...', 'C:\\Office_Work_...', 339)
+#2 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#3 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\Resources\views\exception_full.html.php(38): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer->include('assets/js/excep...')
+#4 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(339): include('C:\\Office_Work_...')
+#5 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php(138): Symfony\Component\ErrorHandler\ErrorRenderer\HtmlE
+2024/03/20 09:18:30 [error] 13892#20072: *1 FastCGI sent in stderr: "uminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#14 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#18 {main}
+  thrown in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php on line 339" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9999", host: "localhost"
+2024/03/20 09:33:54 [notice] 8260#11400: signal process started
+2024/03/20 09:35:03 [notice] 21280#24504: signal process started
+2024/03/20 10:09:55 [notice] 21208#15484: signal process started
+2024/03/20 10:39:51 [error] 20892#23916: *29 FastCGI sent in stderr: "PHP Fatal error:  Cannot declare class App\Http\Controllers\Api\AuthController, because the name is already in use in C:\Office_Work_Space\PHP\Servers\nginx-1.24.0\www\laravelApp\app\Http\Controllers\Api\PassportAuthController.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /api/register HTTP/1.1", upstream: "fastcgi://127.0.0.1:9999", host: "localhost"
